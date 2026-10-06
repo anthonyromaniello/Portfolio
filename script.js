@@ -16,11 +16,12 @@ navToggle.addEventListener('click', () => {
 // Close mobile nav on link click
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', () => navToggle.setAttribute('aria-expanded', 'false'));
 });
 
 // Typewriter effect
 const roles = [
-  'Software Engineer',
+  'Software Developer',
   'AI/ML Enthusiast',
   'Full-Stack Developer',
   'Published Researcher',
@@ -63,7 +64,7 @@ typeWriter();
 // Intersection Observer for fade-in animations
 const fadeEls = document.querySelectorAll(
   '.section-title, .about-grid, .skills-grid, .projects-grid, ' +
-  '.timeline-item, .edu-grid, .contact-links, ' +
+  '.edu-grid, .contact-links, ' +
   '.stat-card, .skill-category, .project-card, .edu-card, .contact-card'
 );
 

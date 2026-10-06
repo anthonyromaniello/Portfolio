@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anthony Romaniello – Software Engineer</title>
+  <title>Anthony Romaniello – Software Developer</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -15,14 +15,13 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">AR<span class="accent">.</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
@@ -32,47 +31,37 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Anthony <span class="accent">Romaniello</span></h1>
+      <p class="hero-greeting">Portfolio / 2026 <span>Toronto, Canada</span></p>
+      <h1 class="hero-name">Anthony<br /><span class="accent">Romaniello</span></h1>
       <div class="hero-role">
         <span class="role-text" id="roleText"></span><span class="cursor">|</span>
       </div>
       <p class="hero-summary">
-        Incoming Masters of Information student at the University of Toronto.
-        Building real-world software from AI translation services to machine learning tools,
-        with a passion for AI, Data Science, and Cyber Security.
+        Master of Information student at the University of Toronto and NSERC-funded AI researcher.
+        I develop software applications, APIs, automated testing systems, and cloud solutions.
       </p>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="#projects" class="btn btn-primary">Explore selected work <span aria-hidden="true">↘</span></a>
+        <a href="#contact" class="btn btn-outline">Start a conversation <span aria-hidden="true">↗</span></a>
       </div>
       <div class="hero-badges">
-        <span class="badge">🏆 Dean's List</span>
-        <span class="badge">🔬 NSERC USRA</span>
-        <span class="badge">📄 ACM/IEEE MODELS 2026</span>
+        <span class="badge">Dean's List</span>
+        <span class="badge">NSERC Undergraduate Research Award</span>
+        <span class="badge">ACM/IEEE MODELS 2026</span>
       </div>
     </div>
     <div class="hero-visual">
-      <div class="code-card">
-        <div class="code-card-header">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <span class="code-card-title">Anthony.java</span>
-        </div>
-        <pre class="code-snippet"><code><span class="kw">public class</span> <span class="cls">Anthony</span> {
-
-  <span class="kw">String</span> degree  = <span class="str">"M.I. @ UofT"</span>;
-  <span class="kw">String</span> focus   = <span class="str">"AI &amp; Systems"</span>;
-  <span class="kw">String[]</span> langs = {
-    <span class="str">"Java"</span>, <span class="str">"Python"</span>,
-    <span class="str">"JavaScript"</span>, <span class="str">"SQL"</span>
-  };
-
-  <span class="kw">boolean</span> openToWork() {
-    <span class="kw">return true</span>;
-  }
-}</code></pre>
+      <div class="index-sheet">
+        <div class="index-sheet-top"><span>Selected profile</span><span>01 — 06</span></div>
+        <div class="index-monogram" aria-hidden="true">AR<span>.</span></div>
+        <p class="index-caption">A practice across<br />software, research &amp; service.</p>
+        <div class="index-rule"></div>
+        <dl class="index-facts">
+          <div><dt>Currently</dt><dd>Master of Information student</dd></div>
+          <div><dt>At</dt><dd>University of Toronto</dd></div>
+          <div><dt>Working on</dt><dd>AI, data &amp; civic systems</dd></div>
+        </dl>
+        <span class="index-stamp">Open to<br />opportunities</span>
       </div>
     </div>
     <a href="#about" class="scroll-hint" aria-label="Scroll down">
@@ -87,16 +76,14 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I'm a fourth-year Honours Information Technology student at York University, 
-            incoming Masters of Information student at the University of Toronto (Information 
-            Systems &amp; Design concentration), and an active researcher awarded the 
-            <strong>NSERC Undergraduate Research Award</strong>.
+            Master of Information student at the University of Toronto (Information 
+            Systems &amp; Design concentration). I completed an Honours BA in Information Technology
+            at York University and received the <strong>NSERC Undergraduate Research Award</strong>.
           </p>
           <p>
-            My work spans full-stack application development, machine learning, and AI integration.
-            I've contributed to published academic research accepted at <strong>ACM/IEEE MODELS 2026</strong>
-            and am currently building <strong>VoceLink</strong> — a real-time AI translation service
-            targeting courtrooms province-wide.
+            My work spans software development, machine learning, and AI evaluation. I co-authored
+            research accepted at <strong>ACM/IEEE MODELS 2026</strong> and develop
+            <strong>VoceLink</strong>, a real-time AI translation service.
           </p>
           <p>
             I also bring frontline perspective from my time as a Records Management Clerk and 
@@ -110,8 +97,8 @@
             <span class="stat-label">GPA</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">3<span class="stat-unit">+</span></span>
-            <span class="stat-label">Major Projects</span>
+            <span class="stat-number">6</span>
+            <span class="stat-label">Featured Projects</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">2<span class="stat-unit">x</span></span>
@@ -119,7 +106,7 @@
           </div>
           <div class="stat-card">
             <span class="stat-number">1</span>
-            <span class="stat-label">Published Paper</span>
+            <span class="stat-label">Accepted Conference Paper</span>
           </div>
         </div>
       </div>
@@ -133,14 +120,18 @@
       <div class="skills-grid">
 
         <div class="skill-category">
-          <h3 class="skill-cat-title">Languages</h3>
+          <h3 class="skill-cat-title">Languages &amp; Web</h3>
           <div class="skill-tags">
             <span class="skill-tag primary">Java</span>
             <span class="skill-tag primary">Python</span>
+            <span class="skill-tag primary">C++</span>
             <span class="skill-tag primary">JavaScript</span>
+            <span class="skill-tag primary">TypeScript</span>
             <span class="skill-tag primary">SQL</span>
             <span class="skill-tag">R</span>
             <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">HTML</span>
           </div>
         </div>
 
@@ -148,59 +139,52 @@
           <h3 class="skill-cat-title">Frameworks &amp; Libraries</h3>
           <div class="skill-tags">
             <span class="skill-tag primary">Spring Boot</span>
+            <span class="skill-tag primary">Spring Security</span>
             <span class="skill-tag primary">JavaFX</span>
             <span class="skill-tag primary">Node.js</span>
-            <span class="skill-tag primary">Express.js</span>
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">Pandas</span>
-            <span class="skill-tag">Matplotlib</span>
-            <span class="skill-tag">Seaborn</span>
-            <span class="skill-tag">Scipy</span>
+            <span class="skill-tag primary">React.js</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Hugging Face</span>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="skill-cat-title">Cloud &amp; Infrastructure</h3>
+          <h3 class="skill-cat-title">Data &amp; Infrastructure</h3>
           <div class="skill-tags">
+            <span class="skill-tag primary">Oracle</span>
+            <span class="skill-tag primary">PostgreSQL</span>
+            <span class="skill-tag primary">MongoDB</span>
+            <span class="skill-tag">NoSQL</span>
             <span class="skill-tag primary">Azure</span>
             <span class="skill-tag primary">Oracle Cloud</span>
-            <span class="skill-tag">Apache Maven</span>
-            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Linux</span>
           </div>
         </div>
 
         <div class="skill-category">
-          <h3 class="skill-cat-title">Data &amp; APIs</h3>
+          <h3 class="skill-cat-title">Software Practices</h3>
           <div class="skill-tags">
-            <span class="skill-tag primary">MongoDB (NoSQL)</span>
-            <span class="skill-tag primary">WebSocket</span>
-            <span class="skill-tag primary">REST APIs</span>
-            <span class="skill-tag">LLM APIs</span>
-            <span class="skill-tag">Stripe API</span>
-            <span class="skill-tag">OpenRouter</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="skill-cat-title">Tools &amp; Practices</h3>
-          <div class="skill-tags">
-            <span class="skill-tag primary">Git / GitHub</span>
-            <span class="skill-tag primary">JUnit 5 (TDD)</span>
-            <span class="skill-tag primary">Jira (Agile)</span>
-            <span class="skill-tag">GnuPG / Kleopatra</span>
-            <span class="skill-tag">LaTeX</span>
-            <span class="skill-tag">Copilot &amp; Open-Source AI</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3 class="skill-cat-title">ML Techniques</h3>
-          <div class="skill-tags">
-            <span class="skill-tag primary">Decision Trees</span>
-            <span class="skill-tag primary">Naïve Bayes</span>
-            <span class="skill-tag primary">Linear Regression</span>
-            <span class="skill-tag">KNN</span>
-            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag primary">Git &amp; GitHub</span>
+            <span class="skill-tag primary">Jira</span>
+            <span class="skill-tag primary">Maven</span>
+            <span class="skill-tag primary">JUnit 5</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Test Automation</span>
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">Software Quality Assurance</span>
+            <span class="skill-tag">Debugging</span>
+            <span class="skill-tag">Object-Oriented Programming</span>
+            <span class="skill-tag">Test-Driven Development</span>
+            <span class="skill-tag">Software Design</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Large Language Models</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Model Evaluation</span>
+            <span class="skill-tag">Prompt Design</span>
           </div>
         </div>
 
@@ -221,34 +205,60 @@
               <span class="project-date">Jan 2026 – Present</span>
               <span class="project-status active">Active</span>
             </div>
-            <h3 class="project-title">VoceLink</h3>
-            <p class="project-subtitle">AI Real-Time Translation Service</p>
+            <img class="project-logo vocelink-logo" src="logo.png" alt="VoceLink logo" width="707" height="353" loading="lazy" />
+            <h3 class="project-title">AI Concurrent Translator</h3>
+            <p class="project-subtitle">VoceLink · AI Real-Time Translation Service</p>
           </div>
           <p class="project-desc">
-            A production-grade Java application that translates speech in real-time to a recipient's 
-            native language and vice versa. Being deployed in courtrooms across Ontario and eventually 
-            across Canadian tribunals and court jurisdictions.
+            A cloud-hosted Java 17 and Spring Boot application using REST APIs and SQL databases to
+            provide secure, scalable real-time speech translation.
           </p>
           <ul class="project-highlights">
-            <li>Real-time bidirectional speech translation using LLM APIs and Azure Cognitive Services</li>
-            <li>Multi-participant WebSocket architecture for concurrent court proceedings</li>
-            <li>Stripe payment integration for SaaS billing</li>
-            <li>Built with TDD using JUnit 5 in an Agile environment</li>
-            <li>Oracle Cloud deployment pipeline</li>
+            <li>Backend services and REST APIs for authentication, translation workflows, and payment processing</li>
+            <li>Test-driven development with Maven, JUnit 5, and Git-based workflows</li>
+            <li>Cloud deployment using Oracle Cloud Infrastructure and Azure</li>
+            <li>Grounded in court operations experience: Records Management Clerk (Jun–Sep 2023), Records Management Clerk &amp; Commissioner (Jan 2024–Mar 2026), and Technical IT Assistant supporting courtroom systems (May–Sep 2026)</li>
           </ul>
           <div class="project-tags">
             <span class="tag">Java</span>
-            <span class="tag">JavaFX</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">SQL</span>
             <span class="tag">Azure</span>
-            <span class="tag">LLM APIs</span>
             <span class="tag">Maven</span>
             <span class="tag">JUnit 5</span>
             <span class="tag">Oracle Cloud</span>
-            <span class="tag">Stripe</span>
+            <span class="tag">REST APIs</span>
           </div>
         </div>
 
-        <!-- ChatGPT Efficiency Analyzer -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-meta">
+              <span class="project-date">Aug 2026 – Present</span>
+              <span class="project-status active">Active</span>
+            </div>
+            <img class="project-logo daytona-logo" src="daytona_logo.png" alt="Daytona project logo" width="1672" height="941" loading="lazy" />
+            <h3 class="project-title">Daytona LLM Prototype</h3>
+            <p class="project-subtitle">Transformer Language Model · PyTorch</p>
+          </div>
+          <p class="project-desc">
+            Built a GPT-style transformer from scratch and trained it on the TinyStories dataset.
+            Deployed the model behind a streaming API with a live browser chat interface.
+          </p>
+          <ul class="project-highlights">
+            <li>Implemented causal self-attention, multi-head attention, and token and positional embeddings</li>
+            <li>Trained with the TinyStories dataset using Hugging Face</li>
+            <li>Served token-by-token output through FastAPI and Server-Sent Events</li>
+          </ul>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">Server-Sent Events</span>
+          </div>
+        </div>
+
         <div class="project-card">
           <div class="project-header">
             <div class="project-meta">
@@ -313,13 +323,15 @@
             <div class="project-meta">
               <span class="project-date">Sep 2025 – Apr 2026</span>
               <span class="project-status research">Research</span>
+              <span class="project-status completed"> Completed</span>
             </div>
             <h3 class="project-title">CNSim – Bitcoin Behavior Analysis</h3>
             <p class="project-subtitle">Academic Research · York University</p>
           </div>
           <p class="project-desc">
-            Contributed to a research project analyzing Bitcoin network behavior using OOP simulation
-            techniques. Applied GnuPG for document encryption and coordinated workflow via Jira.
+            As a Research Assistant in software development and data analysis at York University
+            (Sep 2025–Apr 2026), contributed to a project analyzing Bitcoin network behavior using OOP
+            simulation techniques. Applied GnuPG for document encryption and coordinated workflow via Jira.
             Resulted in a submitted academic paper.
           </p>
           <ul class="project-highlights">
@@ -342,15 +354,16 @@
           <div class="project-header">
             <div class="project-meta">
               <span class="project-date">May 2026 – Present</span>
-              <span class="project-status active">Active</span>
+              <span class="project-status research"> Research</span>
+              <span class="project-status completed">Completed</span>
             </div>
             <h3 class="project-title">LLM Conceptual Modeling Evaluation</h3>
             <p class="project-subtitle">NSERC Research · ACM/IEEE MODELS 2026</p>
           </div>
           <p class="project-desc">
-            NSERC-funded research evaluating how large language models understand and apply 
-            conceptual modeling languages. Paper accepted at the prestigious 
-            ACM/IEEE MODELS 2026 conference.
+            NSERC-funded research conducted as an AI Researcher at York University, evaluating how
+            large language models understand and apply conceptual modeling languages. The resulting
+            paper was accepted at ACM/IEEE MODELS 2026.
           </p>
           <ul class="project-highlights">
             <li>Python tooling to interact with multiple LLMs via OpenRouter</li>
@@ -372,88 +385,18 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section section-alt" id="experience">
-    <div class="container">
-      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>AI Researcher</h3>
-              <span class="timeline-company">York University – Lassonde School of Engineering</span>
-              <span class="timeline-date">May 2026 – Present</span>
-            </div>
-            <p>Awarded the NSERC Undergraduate Research Award. Conducting research on AI evaluation of conceptual modeling languages under Dr. Sotirios Liaskos. Authored Python tooling, performed statistical analysis with R, managed sprints in Jira, and co-authored an accepted ACM/IEEE MODELS 2026 paper.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Technical IT Assistant</h3>
-              <span class="timeline-company">Ministry of Public &amp; Business Services &amp; Procurement (Ontario)</span>
-              <span class="timeline-date">May 2026 – Present</span>
-            </div>
-            <p>Maintain courtroom technology through daily inspections, resolve incident tickets, manage asset inventory and device groups, and perform preventative maintenance ensuring zero disruption to court services.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Research Assistant – Software Engineering &amp; Data Analysis</h3>
-              <span class="timeline-company">York University – School of Information Technology</span>
-              <span class="timeline-date">Sep 2025 – Apr 2026</span>
-            </div>
-            <p>Collaborated with a 7-person research team on the CNSim project. Contributed Java OOP code via Maven, wrote JUnit 5 tests, managed digital certificates with GnuPG, and presented findings weekly to the research team.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Records Management Clerk &amp; Commissioner</h3>
-              <span class="timeline-company">Ministry of the Attorney General – Divisional Court Toronto</span>
-              <span class="timeline-date">Jan 2024 – Mar 2026</span>
-            </div>
-            <p>Managed filing systems at Ontario's busiest court, trained new staff on court applications, commissioned legal documents, and ensured continuity of technology services through software maintenance and updates.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Records Management Clerk</h3>
-              <span class="timeline-company">Ministry of the Attorney General – Civil Court Toronto</span>
-              <span class="timeline-date">Jun – Sep 2023</span>
-            </div>
-            <p>Provided public counter services, drafted correspondence for supervisor review, processed payments, and maintained court equipment.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- EDUCATION -->
   <section class="section" id="education">
     <div class="container">
-      <h2 class="section-title">Edu<span class="accent">cation</span></h2>
+      <h2 class="section-title">Education</span></h2>
       <div class="edu-grid">
 
-        <div class="edu-card upcoming">
+        <div class="edu-card">
           <div class="edu-icon">🎓</div>
           <div class="edu-body">
             <h3>Master of Information</h3>
             <span class="edu-school">University of Toronto</span>
-            <span class="edu-date">Incoming</span>
+            <span class="edu-date">Sep 2026 – Present</span>
             <p>Concentration: <strong>Information Systems &amp; Design</strong></p>
           </div>
         </div>
@@ -461,9 +404,9 @@
         <div class="edu-card">
           <div class="edu-icon">🏛️</div>
           <div class="edu-body">
-            <h3>B.A. Information Technology (Honours)</h3>
-            <span class="edu-school">York University – Faculty of Liberal Arts</span>
-            <span class="edu-date">Sep 2022 – Present</span>
+            <h3>Honours BA, Information Technology</h3>
+            <span class="edu-school">York University</span>
+            <span class="edu-date">Sep 2022 – Jun 2026</span>
             <p>GPA: <strong>7.7 / 9.0</strong></p>
             <div class="edu-honours">
               <span class="honour-badge">Dean's List</span>
@@ -482,7 +425,7 @@
     <div class="container contact-container">
       <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
       <p class="contact-intro">
-        I'm actively looking for opportunities in Software Engineering, AI, and Data Science.
+        I'm actively looking for opportunities in software development, AI, and data science.
         Whether you have a role, a collaboration, or just want to connect — reach out!
       </p>
       <div class="contact-links">
