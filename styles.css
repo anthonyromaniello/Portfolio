@@ -127,7 +127,7 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
 }
 
-.nav-links .nav-cta:hover { background: #79bbff; color: var(--bg); }
+.nav-links .nav-cta:hover { background: #71b3f5; color: var(--bg); }
 
 .nav-links a.active { color: var(--accent); background: rgba(88,166,255,.1); }
 
@@ -931,7 +931,7 @@ body {
 }
 .nav-links a:hover { background: transparent; color: var(--accent); }
 .nav-links .nav-cta { background: var(--text); color: var(--bg); padding: .55rem .85rem; }
-.nav-links .nav-cta:hover { background: var(--accent-fill); color: white; }
+.nav-links .nav-cta:hover { background: var(--text); color: white; }
 .nav-links a.active { background: transparent; color: var(--accent); }
 .nav-toggle span { background: var(--text); }
 
@@ -1142,7 +1142,7 @@ body {
 .edu-date { color: var(--text-dim); }
 .honour-badge { padding: .2rem .4rem; background: transparent; border: 1px solid #bcb194; border-radius: 0; color: var(--text); font-size: .68rem; }
 
-#contact { background: #c5462d; color: #fff7eb; }
+#contact { background: #000000; color: #fff7eb; }
 #contact .section-title .accent { color: #fff7eb; }
 .contact-container { max-width: 900px; text-align: left; }
 .contact-intro { max-width: 620px; margin: 0 0 2.4rem; color: #fff7eb; }
