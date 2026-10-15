@@ -19,6 +19,14 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navToggle.setAttribute('aria-expanded', 'false'));
 });
 
+const skillPractices = document.querySelector('.skill-practices');
+const syncSkillPractices = () => {
+  skillPractices.open = window.innerWidth > 640;
+};
+
+syncSkillPractices();
+window.addEventListener('resize', syncSkillPractices);
+
 // Typewriter effect
 const roles = [
   'Software Developer',
@@ -64,7 +72,7 @@ typeWriter();
 // Intersection Observer for fade-in animations
 const fadeEls = document.querySelectorAll(
   '.section-title, .about-grid, .skills-grid, .projects-grid, ' +
-  '.edu-grid, .contact-links, ' +
+  '.edu-grid, .hero-education-head, .contact-links, ' +
   '.stat-card, .skill-category, .project-card, .edu-card, .contact-card'
 );
 
@@ -82,18 +90,23 @@ const observer = new IntersectionObserver((entries) => {
 fadeEls.forEach(el => observer.observe(el));
 
 // Active nav link highlighting
-const sections = document.querySelectorAll('section[id]');
 const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+const sections = [...document.querySelectorAll('section[id], #about, #skills, #education')]
+  .filter(section => [...navItems].some(link => link.getAttribute('href') === `#${section.id}`));
 
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const id = entry.target.id;
-      navItems.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
-      });
-    }
+function updateActiveNav() {
+  const readingLine = window.innerHeight * 0.25;
+  let activeSection = null;
+
+  sections.forEach(section => {
+    if (section.getBoundingClientRect().top <= readingLine) activeSection = section;
   });
-}, { threshold: 0.4 });
 
-sections.forEach(s => sectionObserver.observe(s));
+  navItems.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${activeSection?.id}`);
+  });
+}
+
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+window.addEventListener('resize', updateActiveNav);
+updateActiveNav();

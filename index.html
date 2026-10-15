@@ -28,59 +28,37 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- INTRO + PROFILE -->
   <section class="hero" id="hero">
     <div class="hero-content">
       <p class="hero-greeting">Portfolio / 2026 <span>Toronto, Canada</span></p>
       <h1 class="hero-name">Anthony<br /><span class="accent">Romaniello</span></h1>
       <div class="hero-role">
-        <span class="role-text" id="roleText"></span><span class="cursor">|</span>
       </div>
       <p class="hero-summary">
-        Master of Information student at the University of Toronto and NSERC-funded AI researcher.
-        I develop software applications, APIs, automated testing systems, and cloud solutions.
+        I develop practical software at the intersection of AI, data, and public services.
       </p>
-      <div class="hero-actions">
+      <div class="about-text hero-about" id="about">
+        <p>
+          I am pursuing a Master of Information in Information Systems &amp; Design at the University
+          of Toronto after completing an Honours BA in Information Technology at York University.
+          I received the <strong>NSERC Undergraduate Research Award</strong>.
+        </p>
+        <p>
+          My work spans software development, machine learning, and AI evaluation. I co-authored research
+          accepted at <strong>ACM/IEEE MODELS 2026</strong> and published in the <strong>ACM Digital Library</strong>.
+          I develop <strong>VoceLink</strong>, a real-time AI translation service, informed by my court records
+          and courtroom technology experience.
+        </p>
       </div>
     </div>
     <div class="hero-visual">
       <img class="profile-photo" src="resources/Screenshot%202026-10-06%20215853.png" alt="Portrait of Anthony Romaniello" width="322" height="346" fetchpriority="high" />
     </div>
-    <a href="#about" class="scroll-hint" aria-label="Scroll down">
-      <span class="scroll-arrow"></span>
-    </a>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">About <span class="accent">Me</span></h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Master of Information student at the University of Toronto (Information 
-            Systems &amp; Design concentration). I completed an Honours BA in Information Technology
-            at York University and received the <strong>NSERC Undergraduate Research Award</strong>.
-          </p>
-          <p>
-            My work spans software development, machine learning, and AI evaluation. I co-authored
-            research accepted at <strong>ACM/IEEE MODELS 2026</strong> and published in the <strong>ACM Digital Library</strong>, and develop
-            <strong>VoceLink</strong>, a real-time AI translation service.
-          </p>
-          <p>
-            I also bring frontline perspective from my time as a Records Management Clerk and 
-            Commissioner at the Ministry of the Attorney General, giving me unique insight into
-            the legal domain VoceLink serves.
-          </p>
-        </div>
+    <div class="hero-skills" id="skills">
+      <div class="hero-skills-head">
+        <h2>Technical <span class="accent">Skills</span></h2>
       </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section section-alt" id="skills">
-    <div class="container">
-      <h2 class="section-title">Technical <span class="accent">Skills</span></h2>
       <div class="skills-grid">
 
         <div class="skill-category">
@@ -127,8 +105,8 @@
           </div>
         </div>
 
-        <div class="skill-category">
-          <h3 class="skill-cat-title">Software Practices</h3>
+        <details class="skill-category skill-practices" open>
+          <summary class="skill-cat-title">Software Practices</summary>
           <div class="skill-tags">
             <span class="skill-tag primary">Git &amp; GitHub</span>
             <span class="skill-tag primary">Jira</span>
@@ -150,10 +128,44 @@
             <span class="skill-tag">Model Evaluation</span>
             <span class="skill-tag">Prompt Design</span>
           </div>
-        </div>
+        </details>
 
       </div>
     </div>
+    <div class="hero-education" id="education">
+      <div class="hero-education-head">
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <h3>Master of Information</h3>
+            <span class="edu-school">University of Toronto</span>
+            <span class="edu-date">Sep 2026 – Present</span>
+            <p>Concentration: <strong>Information Systems &amp; Design</strong></p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">🏛️</div>
+          <div class="edu-body">
+            <h3>Honours BA, Information Technology</h3>
+            <span class="edu-school">York University</span>
+            <span class="edu-date">Sep 2022 – Jun 2026</span>
+            <p>GPA: <strong>7.7 / 9.0</strong></p>
+            <div class="edu-honours">
+              <span class="honour-badge">Dean's List</span>
+              <span class="honour-badge">NSERC USRA</span>
+              <span class="honour-badge">Academic Achievement List ×2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#projects" class="scroll-hint" aria-label="Scroll to projects">
+      <span class="scroll-arrow"></span>
+    </a>
   </section>
 
   <!-- PROJECTS -->
@@ -342,41 +354,6 @@
             <span class="tag">OpenRouter</span>
             <span class="tag">LaTeX</span>
             <span class="tag">Jira</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section" id="education">
-    <div class="container">
-      <h2 class="section-title">Education</span></h2>
-      <div class="edu-grid">
-
-        <div class="edu-card">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-body">
-            <h3>Master of Information</h3>
-            <span class="edu-school">University of Toronto</span>
-            <span class="edu-date">Sep 2026 – Present</span>
-            <p>Concentration: <strong>Information Systems &amp; Design</strong></p>
-          </div>
-        </div>
-
-        <div class="edu-card">
-          <div class="edu-icon">🏛️</div>
-          <div class="edu-body">
-            <h3>Honours BA, Information Technology</h3>
-            <span class="edu-school">York University</span>
-            <span class="edu-date">Sep 2022 – Jun 2026</span>
-            <p>GPA: <strong>7.7 / 9.0</strong></p>
-            <div class="edu-honours">
-              <span class="honour-badge">Dean's List</span>
-              <span class="honour-badge">NSERC USRA</span>
-              <span class="honour-badge">Academic Achievement List ×2</span>
-            </div>
           </div>
         </div>
 
